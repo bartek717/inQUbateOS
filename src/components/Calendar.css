@@ -1,0 +1,51 @@
+/* CustomCalendar.css */
+
+.calendar-container {
+  display: flex;
+}
+
+.calendar {
+  width: 300px;
+}
+
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center; 
+  padding: 8px 0;
+  font-weight: bold;
+  /* color: #666; */
+  text-transform: uppercase;
+  gap: 1px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+.current-day {
+  position: relative; /* Position the circle relative to the current day */
+}
+
+.current-day::before {
+  content: ''; /* Create the circle using pseudo-element */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px; /* Adjust circle size as needed */
+  height: 24px;
+  background-color: transparent; /* Transparent background */
+  border: 2px solid white; /* Border color for the circle */
+  border-radius: 50%; /* Make it a circle */
+}

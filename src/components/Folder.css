@@ -1,0 +1,37 @@
+/* Folder.css */
+
+.folder {
+    display: inline-block;
+    position: relative;
+    /* margin: 10px; */
+    opacity: 1;
+  }
+  
+  .folder a {
+    display: block;
+    position: relative;
+  }
+  
+  .folder img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  
+  .folder:hover .overlay {
+    opacity: 1;
+  }
+  
